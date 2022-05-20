@@ -6,7 +6,7 @@ USER root
 ENV STI_SCRIPTS_PATH=/usr/libexec/s2i
 
 RUN apt-get update && \
-    apt-get install zip
+    apt-get install -y zip
 
 # ===============================================================================================
 

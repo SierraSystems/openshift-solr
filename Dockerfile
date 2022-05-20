@@ -28,10 +28,6 @@ RUN chgrp -R 0 /opt/solr \
   && chmod -R g+rwX /opt/solr \
   && chown -LR solr:root /opt/solr
 
-RUN chgrp -R 0 /opt/docker-solr \
-  && chmod -R g+rwX /opt/docker-solr \
-  && chown -LR solr:root /opt/docker-solr
-
 # - In order to drop the root user, we have to make some directories writable
 #   to the root group as OpenShift default security model is to run the container
 #   under random UID.
